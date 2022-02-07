@@ -1,6 +1,6 @@
-FROM bde2020/spark-base:3.2.0-hadoop3.2
+FROM hubnortheuropeacr.azurecr.io/spark/spark-base:3.2.1-h2.7-bcebase
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
+LABEL maintainer="Alessandro Vozza <alessandro.vozza@atradius.com>"
 
 COPY worker.sh /
 
