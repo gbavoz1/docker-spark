@@ -1,14 +1,14 @@
 FROM alpine:3.10
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
+LABEL maintainer="Alessandro Vozza <alessandro.vozza@atradius.com>"
 
 ENV ENABLE_INIT_DAEMON false
 ENV INIT_DAEMON_BASE_URI http://identifier/init-daemon
 ENV INIT_DAEMON_STEP spark_master_init
 
 ENV BASE_URL=https://archive.apache.org/dist/spark/
-ENV SPARK_VERSION=3.2.0
-ENV HADOOP_VERSION=3.2
+ENV SPARK_VERSION=3.2.1
+ENV HADOOP_VERSION=2.7
 
 COPY wait-for-step.sh /
 COPY execute-step.sh /
